@@ -14,3 +14,8 @@ make install_go
 go version
 ```
 ## vim
+Use [vim-go v1.24](https://github.com/fatih/vim-go/tree/b919c60a6d1ca70a93d56fa4ee13dbcf412a8554):
+```
+make vim_go
+```
+

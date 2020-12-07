@@ -171,12 +171,12 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 12 - ((11 * winheight(0) + 22) / 44)
+let s:l = 21 - ((20 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
-normal! 010|
+21
+normal! 0
 tabnext
 edit Makefile
 set splitbelow splitright
@@ -312,12 +312,18 @@ setlocal wrap
 setlocal wrapmargin=0
 1
 normal! zo
-let s:l = 19 - ((18 * winheight(0) + 22) / 44)
+9
+normal! zo
+17
+normal! zo
+23
+normal! zo
+let s:l = 14 - ((13 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-19
-normal! 044|
+14
+normal! 028|
 tabnext
 edit .gitignore
 set splitbelow splitright
@@ -735,13 +741,13 @@ exe s:l
 normal! zt
 6
 normal! 0102|
-tabnext 1
+tabnext 2
 set stal=1
-badd +1 README.md
+badd +0 README.md
 badd +1 bash/.profile
 badd +1 Makefile
-badd +0 bash/.profile-functions
-badd +0 .gitignore
+badd +1 .gitignore
+badd +1 bash/.profile-functions
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -753,6 +759,7 @@ if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &so = s:so_save | let &siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
