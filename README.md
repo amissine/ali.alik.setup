@@ -1,2 +1,3 @@
 # ali.alik.setup
-WORK IN PROGRESS! Arbitrage Logistics International Kernel box Setup for developers
+[ALI](https://docs.google.com/document/d/11oG00Nvn6vcFC2AemFmSkZNp0trEFrUHxL0IrkGR45c/ "the ALI project") Kernel box Setup for developers
+## vim
