@@ -28,4 +28,5 @@ $(HOME)/.vimrc: vim/.vimrc
 	@cp vim/.vimrc $(HOME)/
 
 $(HOME)/.vim/: vim/.vim/
+	@git submodule update --init --recursive
 	@cp -a vim/.vim/ $(HOME)/
