@@ -18,4 +18,4 @@ Use [vim-go v1.24](https://github.com/fatih/vim-go/tree/b919c60a6d1ca70a93d56fa4
 ```
 make vim_go
 ```
-
+Then open Vim and execute `:GoInstallBinaries`. When I did it, there was a complaint about `gcc` not found. As of yet, I am not sure if I need it on my box. Will update this step if I do.
